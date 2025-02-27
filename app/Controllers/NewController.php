@@ -14,6 +14,12 @@ class NewController extends BaseController
 
     public function test()
     {
-        return view ('test');
+
+        session()->set("testSes",123);
+
+        print_r (session()->get('testSes'));
+
+
+        // return view ('test');
     }
  }

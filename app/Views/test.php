@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+<?php echo session()->get('testSes'); ?>
+<?php echo "ABC" ?>
     <h4> This is view file test.php </h4>
 </body>
 </html>
