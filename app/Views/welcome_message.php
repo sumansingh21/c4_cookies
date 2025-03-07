@@ -32,7 +32,7 @@ use Config\Images;
 <body>
     <div class="form-container">
         <div class="child">
-            <form action="<?=base_url('cookie_example');?>" method="POST">
+            <form action="<?=base_url('');?>cookiexample" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="email" name="email" class="form-control" placeholder="Email">
@@ -43,9 +43,9 @@ use Config\Images;
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1" name="" id="" >Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1" name="remember" id="remember" value="1">Check me out</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" name="login" value="login" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>

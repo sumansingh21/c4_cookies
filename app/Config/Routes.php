@@ -11,6 +11,11 @@ $routes->get('/test', 'NewController::test');
 
 $routes->get('/submit-dummy-curriculum-form', 'NewDynamicPageController::insertDummy');
 
-$routes->post('/cookie_example', 'CookieController::validateForm');
+$routes->post('/cookiexample', 'CookieController::validateForm');
 
+$routes->get('/postLogin', 'CookieController::postLogin');
+
+$routes->post('/check', function(){
+    echo "Response";
+});
 
