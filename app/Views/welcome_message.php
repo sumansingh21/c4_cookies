@@ -1,5 +1,11 @@
 <?php
-
+     if(get_cookie('password')){
+        echo "Cookie Password :- ". get_cookie('password');
+        echo "</br>";
+        echo "Cookie Email :- ". get_cookie('email');
+    } else {
+        echo "No cookie is set ";
+    }
 use Config\Images;
 ?>
 <!DOCTYPE html>
@@ -42,8 +48,8 @@ use Config\Images;
                     <input type="password" class="form-control" id="password" name ="password">
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1" name="remember" id="remember" value="1">Check me out</label>
+                    <input type="checkbox" class="form-check-input" name="remember" id="remember"  value="1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
                 <button type="submit" name="login" value="login" class="btn btn-primary">Submit</button>
             </form>
